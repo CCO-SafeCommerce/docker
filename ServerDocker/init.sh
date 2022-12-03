@@ -1,4 +1,4 @@
-cd bancoDados
+cd BancoDados
 sudo docker build -t safecommercebd .
 echo "-----------------"
 sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=sptech -e MYSQL_DATABASE=safecommerce -e MYSQL_USER=aluno -e MYSQL_PASSWORD=sptech safecommercebd
