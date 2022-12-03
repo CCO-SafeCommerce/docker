@@ -11,5 +11,5 @@ sudo docker build -t safecommerce-python .
 echo -e "\n\nAguarde...\n\n"
 sleep 10
 echo "Iniciando Serviço: "
-docker run -it safecommerce-python
+sudo docker run -it safecommerce-python
 echo -e "Serviço iniciado!"
