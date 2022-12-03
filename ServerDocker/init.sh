@@ -5,9 +5,11 @@ sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=sptech -e MYSQL_DATABASE=
 
 cd ..
 cd Python
+git clone https://github.com/CCO-SafeCommerce/API-Python.git
+
 sudo docker build -t safecommerce-python .
 echo -e "\n\nAguarde...\n\n"
 sleep 10
 echo "Iniciando Serviço: "
-docker run -d safecommerce-python
+docker run -it safecommerce-python
 echo -e "Serviço iniciado!"
