@@ -32,6 +32,7 @@ create table Servidor(
 	so varchar(45),
     enderecoMac varchar(17) unique,
     fkEmpresa int,
+    ipServidor VARCHAR(50),
     foreign key (fkEmpresa) references Empresa(idEmpresa)
 );
 
